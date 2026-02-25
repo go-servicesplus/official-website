@@ -4,17 +4,16 @@
     <div class="size-8 text-secondary">
       <span class="material-symbols-outlined text-3xl">grid_view</span>
     </div>
-    <h2 class="text-primary text-xl font-bold leading-tight tracking-[-0.015em]">Go Services</h2>
+    <h2 class="text-primary text-xl font-bold leading-tight tracking-[-0.015em]">Go Services Plus</h2>
   </div>
 
   <!-- Navigation au centre -->
   <nav class="hidden md:block absolute left-1/2 transform -translate-x-1/2">
     <div class="flex items-center gap-9">
       <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/">Accueil</a>
-      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/booking">Go Taxi</a>
-      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/health">Go Santé</a>
-      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/events">Go Événements</a>
-      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/partners">Partenaires</a>
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/booking">Go-Services Taxi</a>
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/health">Go-Services Santé</a>
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/events">Go-Services Événementielle</a>
     </div>
   </nav>
 
@@ -22,14 +21,42 @@
   <div class="flex items-center gap-4">
     <!-- CTA pour desktop -->
     <button class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-slate-800 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]" (click)="navigateToContact()">
-      <span class="truncate">Contact</span>
+      <span class="truncate">Nous contacter</span>
     </button>
-    
+
     <!-- Menu burger mobile -->
     <div class="md:hidden">
-      <button class="p-2 text-slate-600">
+      <button class="p-2 text-slate-600" (click)="toggleMobile()" aria-label="Ouvrir le menu">
         <span class="material-symbols-outlined">menu</span>
       </button>
     </div>
   </div>
 </header>
+
+<!-- Overlay mobile -->
+<div *ngIf="isMobileOpen" class="fixed inset-0 z-40 bg-black/40 md:hidden" (click)="closeMobile()"></div>
+
+<!-- Panneau latéral mobile gauche -->
+<aside *ngIf="isMobileOpen" class="fixed inset-y-0 left-0 z-50 w-72 max-w-[85%] bg-white shadow-xl md:hidden flex flex-col">
+  <div class="flex items-center justify-between px-4 py-4 border-b border-slate-200">
+    <div class="flex items-center gap-2 text-primary">
+      <span class="material-symbols-outlined text-2xl text-secondary">grid_view</span>
+      <span class="font-bold">Go Services Plus</span>
+    </div>
+    <button class="p-2 text-slate-600" (click)="closeMobile()" aria-label="Fermer le menu">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+  <nav class="flex-1 overflow-y-auto py-4">
+    <ul class="flex flex-col">
+      <li><a routerLink="/" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Accueil</a></li>
+      <li><a routerLink="/booking" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Go-Services Taxi</a></li>
+      <li><a routerLink="/health" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Go-Services Santé</a></li>
+      <li><a routerLink="/events" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Go-Services Événementielle</a></li>
+      <li><a routerLink="/partners" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Partenaires</a></li>
+    </ul>
+  </nav>
+  <div class="p-4 border-t border-slate-200">
+    <button (click)="navigateToContact(); closeMobile()" class="w-full h-10 rounded-lg bg-primary text-white font-bold hover:bg-slate-800 transition-colors">Nous contacter</button>
+  </div>
+</aside>
