@@ -1,0 +1,35 @@
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f3] bg-white/90 backdrop-blur-md px-4 sm:px-10 py-3">
+  <!-- Logo à gauche -->
+  <div class="flex items-center gap-4 text-primary">
+    <div class="size-8 text-secondary">
+      <span class="material-symbols-outlined text-3xl">grid_view</span>
+    </div>
+    <h2 class="text-primary text-xl font-bold leading-tight tracking-[-0.015em]">Go Services</h2>
+  </div>
+
+  <!-- Navigation au centre -->
+  <nav class="hidden md:block absolute left-1/2 transform -translate-x-1/2">
+    <div class="flex items-center gap-9">
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/">Accueil</a>
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/booking">Go Taxi</a>
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/health">Go Santé</a>
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/events">Go Événements</a>
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/partners">Partenaires</a>
+    </div>
+  </nav>
+
+  <!-- CTA à droite et menu mobile -->
+  <div class="flex items-center gap-4">
+    <!-- CTA pour desktop -->
+    <button class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-slate-800 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]" (click)="navigateToContact()">
+      <span class="truncate">Contact</span>
+    </button>
+    
+    <!-- Menu burger mobile -->
+    <div class="md:hidden">
+      <button class="p-2 text-slate-600">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+</header>

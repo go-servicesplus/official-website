@@ -1,0 +1,125 @@
+<section class="w-full relative py-20 overflow-hidden bg-[#FAFBFC]">
+<div class="absolute inset-0 z-0 opacity-[0.4] pointer-events-none">
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="60" id="tech-grid" patternUnits="userSpaceOnUse" width="60">
+<path d="M60 0L0 0L0 60" fill="none" stroke="#E2E8F0" stroke-width="0.5"></path>
+<circle cx="0" cy="0" fill="#CBD5E1" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#tech-grid)" height="100%" width="100%"></rect>
+</svg>
+<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px]"></div>
+</div>
+<div class="max-w-[1300px] mx-auto px-4 sm:px-10 relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div class="flex flex-col h-full justify-center">
+<div class="mb-10">
+<span class="inline-block py-1 px-3 rounded-md bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest mb-4">
+                            Contact Direct
+                        </span>
+<h2 class="text-4xl lg:text-5xl font-black text-primary mb-6 leading-tight">
+                            Parlons de votre <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">Prochain Projet</span>
+</h2>
+<p class="text-slate-500 text-lg leading-relaxed max-w-md">
+                            Notre équipe d'experts est disponible pour vous accompagner dans tous vos besoins de mobilité, santé et événementiel.
+                        </p>
+</div>
+<div class="space-y-6">
+<div class="micro-interaction-item flex items-center gap-6 p-4 rounded-xl cursor-pointer">
+<div class="icon-box w-14 h-14 rounded-2xl bg-white shadow-lg shadow-slate-200/50 flex items-center justify-center text-emerald-600 transition-all duration-300 border border-slate-100">
+<span class="material-symbols-outlined text-2xl">schedule</span>
+</div>
+<div>
+<h4 class="font-bold text-primary text-lg">Heures d'ouverture</h4>
+<p class="text-slate-500 text-sm">Lun - Sam: 8h00 - 20h00</p>
+</div>
+</div>
+<div class="micro-interaction-item flex items-center gap-6 p-4 rounded-xl cursor-pointer">
+<div class="icon-box w-14 h-14 rounded-2xl bg-white shadow-lg shadow-slate-200/50 flex items-center justify-center text-blue-600 transition-all duration-300 border border-slate-100">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-primary text-lg">Réponse garantie</h4>
+<p class="text-slate-500 text-sm">Nous répondons sous 24h ouvrées</p>
+</div>
+</div>
+<div class="micro-interaction-item flex items-center gap-6 p-4 rounded-xl cursor-pointer">
+<div class="icon-box w-14 h-14 rounded-2xl bg-white shadow-lg shadow-slate-200/50 flex items-center justify-center text-purple-600 transition-all duration-300 border border-slate-100">
+<span class="material-symbols-outlined text-2xl">headset_mic</span>
+</div>
+<div>
+<h4 class="font-bold text-primary text-lg">Support VIP</h4>
+<p class="text-slate-500 text-sm">Ligne prioritaire pour les urgences</p>
+</div>
+</div>
+</div>
+<div class="mt-12 flex gap-4 opacity-80">
+<div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-slate-100 to-white shadow-[10px_10px_20px_#d1d5db,-10px_-10px_20px_#ffffff] flex items-center justify-center animate-float" style="animation-delay: 0s;">
+<span class="material-symbols-outlined text-3xl text-emerald-500/50">mark_email_unread</span>
+</div>
+<div class="w-16 h-16 rounded-full bg-gradient-to-br from-slate-100 to-white shadow-[10px_10px_20px_#d1d5db,-10px_-10px_20px_#ffffff] flex items-center justify-center animate-float" style="animation-delay: 1.5s;">
+<span class="material-symbols-outlined text-2xl text-blue-500/50">send</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl blur opacity-20 animate-pulse-slow"></div>
+<div class="premium-glass-form rounded-2xl p-8 sm:p-10 relative z-10">
+<h3 class="text-2xl font-bold text-primary mb-8 flex items-center gap-3">
+<span class="w-8 h-[2px] bg-emerald-500 block"></span>
+                            Envoyez un message
+                        </h3>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="relative">
+<input class="floating-input" id="name" placeholder=" " type="text"/>
+<label class="floating-label" for="name">Nom complet</label>
+</div>
+<div class="relative">
+<input class="floating-input" id="phone" placeholder=" " type="tel"/>
+<label class="floating-label" for="phone">Téléphone</label>
+</div>
+</div>
+<div class="relative">
+<input class="floating-input" id="email" placeholder=" " type="email"/>
+<label class="floating-label" for="email">Adresse Email Pro</label>
+</div>
+<div class="relative">
+<select class="floating-input appearance-none cursor-pointer" id="service">
+<option disabled="" selected="" value=""></option>
+<option value="aibd">Taxi AIBD</option>
+<option value="sante">Santé</option>
+<option value="event">Événements</option>
+<option value="other">Autre demande</option>
+</select>
+<label class="floating-label" for="service">Service concerné</label>
+<div class="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none text-slate-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<div class="relative">
+<textarea class="floating-input resize-none h-32" id="message" placeholder=" "></textarea>
+<label class="floating-label" for="message">Comment pouvons-nous aider ?</label>
+</div>
+<div class="pt-4">
+<button class="w-full py-5 rounded-xl bg-gradient-to-r from-primary to-slate-900 text-white font-bold text-lg shadow-[0_10px_20px_-5px_rgba(15,23,42,0.3)] hover:shadow-[0_20px_30px_-10px_rgba(0,168,107,0.4)] transition-all duration-300 transform hover:-translate-y-1 group relative overflow-hidden" type="submit">
+<span class="relative z-10 flex items-center justify-center gap-3">
+                                        Envoyer le message
+                                        <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</span>
+<div class="absolute inset-0 bg-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-0 left-0 h-[2px] w-full bg-emerald-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+</button>
+</div>
+<p class="text-center text-xs text-slate-400 mt-6">
+                                En envoyant ce formulaire, vous acceptez notre <a class="underline hover:text-emerald-600" href="#">politique de confidentialité</a>.
+                            </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>

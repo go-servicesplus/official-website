@@ -1,0 +1,369 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Policy card styles */
+.policy-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 10px 40px -10px rgba(15, 23, 41, 0.08);
+}
+
+.prose h2 {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.prose h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #00A86B;
+  border-radius: 2px;
+}
+
+/* Essential form styles that can't be done with Tailwind */
+.floating-label-group {
+  position: relative;
+}
+
+.floating-label-group input:focus ~ label,
+.floating-label-group input:not(:placeholder-shown) ~ label,
+.floating-label-group select:focus ~ label,
+.floating-label-group select:not([value=""]) ~ label,
+.floating-label-group textarea:focus ~ label,
+.floating-label-group textarea:not(:placeholder-shown) ~ label {
+  top: -8px;
+  font-size: 12px;
+  color: #00A86B;
+  background: white;
+  padding: 0 4px;
+}
+
+.floating-label-group label {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 12px;
+  transition: 0.2s ease all;
+  color: #94a3b8;
+}
+
+.form-input-line {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #e2e8f0;
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-input-line:focus {
+  border-bottom-color: #00A86B;
+  box-shadow: none;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  border: 2px dashed #e2e8f0;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: #f8fafc;
+}
+
+.file-upload-wrapper:hover {
+  border-color: #00A86B;
+  background-color: rgba(0, 168, 107, 0.05);
+}
+
+.file-upload-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Contact form specific styles */
+.floating-input {
+  width: 100%;
+  background: rgba(241, 245, 249, 0.5);
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 1.5rem 1rem 0.5rem;
+  font-size: 1rem;
+  color: #0F172A;
+  transition: all 0.3s ease;
+  outline: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.floating-input:focus {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom-color: #00A86B;
+  box-shadow: 0 4px 6px -1px rgba(0, 168, 107, 0.1);
+}
+
+.floating-label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1rem;
+  color: #64748b;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform-origin: left top;
+}
+
+.floating-input:focus ~ .floating-label,
+.floating-input:not(:placeholder-shown) ~ .floating-label {
+  transform: translateY(-0.75rem) scale(0.75);
+  color: #00A86B;
+  font-weight: 600;
+}
+
+.micro-interaction-item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.micro-interaction-item:hover {
+  transform: translateX(10px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.micro-interaction-item:hover .icon-box {
+  background: #00A86B;
+  color: white;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.premium-glass-form {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.1), 0 0 0 1px rgba(0, 168, 107, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-glass-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 168, 107, 0.3), transparent);
+}
+
+/* Booking form specific styles */
+.car-select-radio:checked + label {
+  border-color: #00A86B;
+  background-color: rgba(0, 168, 107, 0.05);
+}
+
+.car-select-radio:checked + label .check-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.btn-glow-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow-hover::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.btn-glow-hover:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Health page specific styles */
+.service-card-active {
+  border-color: #00A86B;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 40px -10px rgba(0, 168, 107, 0.2);
+}
+
+/* Only essential CSS that can't be done with Tailwind */
+.service-card:hover .service-icon {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.service-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 168, 107, 0.2);
+  box-shadow: 0 20px 40px -10px rgba(0, 168, 107, 0.15);
+}
+
+.glass-number {
+  background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.icon-3d-glass {
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(255,255,255,0.1));
+  backdrop-filter: blur(5px);
+  box-shadow: inset 2px 2px 5px rgba(255,255,255,0.5), inset -2px -2px 5px rgba(0,0,0,0.1), 10px 10px 20px rgba(0,0,0,0.1);
+}
+
+.neon-path {
+  stroke-dasharray: 20;
+  animation: dash 2s linear infinite reverse;
+}
+
+.feature-glass-card {
+  background: rgba(15, 23, 41, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-glass-card:hover {
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  background: rgba(15, 23, 41, 0.6);
+  box-shadow: 0 0 30px rgba(0, 168, 107, 0.15);
+}
+
+.newsletter-glass {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 41, 0.1);
+}
+
+.mesh-gradient {
+  background-color: hsla(0,0%,100%,1);
+  background-image:
+    radial-gradient(at 40% 20%, hsla(160,50%,90%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(210,50%,95%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(230,50%,95%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(160,50%,95%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(210,50%,90%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(240,50%,95%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(240,50%,95%,1) 0px, transparent 50%);
+}
+
+.chrome-icon {
+  background: linear-gradient(135deg, #e0e0e0 0%, #ffffff 50%, #a0a0a0 100%);
+  box-shadow: 
+    inset 2px 2px 5px rgba(255,255,255,0.9),
+    inset -2px -2px 5px rgba(0,0,0,0.3),
+    5px 5px 15px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.6);
+}
+
+.glass-input-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-card-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card-glass:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -5px rgba(0, 168, 107, 0.1);
+  border-color: rgba(0, 168, 107, 0.2);
+}
+
+.glass-card-dark {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-card-dark:hover {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(0, 168, 107, 0.4);
+  box-shadow: 0 10px 30px -5px rgba(0, 168, 107, 0.1);
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .faq-icon {
+  transform: rotate(45deg);
+}
+
+details[open] .faq-content {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 1rem;
+}
+
+.faq-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}

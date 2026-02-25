@@ -1,0 +1,176 @@
+<div class="relative w-full bg-white overflow-hidden pb-16 pt-20">
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <!-- Pattern de fond -->
+    <svg class="absolute inset-0 w-full h-full opacity-[0.05]" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern height="40" id="hero-pattern" patternUnits="userSpaceOnUse" width="40">
+          <path d="M0 40L40 0H20L0 20M40 40V20L20 40" fill="none" stroke="currentColor" stroke-width="1"></path>
+        </pattern>
+      </defs>
+      <rect fill="url(#hero-pattern)" height="100%" width="100%"></rect>
+    </svg>
+
+    <!-- Gradients flous animés -->
+    <div class="absolute right-0 top-0 -mt-20 -mr-20 h-[500px] w-[500px] rounded-full bg-secondary/5 blur-3xl animate-float"></div>
+    <div class="absolute bottom-0 left-0 -mb-20 -ml-20 h-[400px] w-[400px] rounded-full bg-primary/5 blur-3xl animate-float-reverse"></div>
+
+    <!-- Formes SVG animées -->
+    <svg class="absolute inset-0 w-full h-full opacity-15" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="privacy-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#00A86B;stop-opacity:0.2"></stop>
+          <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"></stop>
+        </linearGradient>
+        <linearGradient id="privacy-grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.15"></stop>
+          <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"></stop>
+        </linearGradient>
+      </defs>
+
+      <!-- Cercles décoratifs animés -->
+      <circle cx="85%" cy="15%" r="120" fill="url(#privacy-grad1)" opacity="0.3" class="animate-pulse-slow"></circle>
+      <circle cx="10%" cy="75%" r="80" fill="url(#privacy-grad2)" opacity="0.25" class="animate-spin-slow"></circle>
+    </svg>
+
+    <!-- Ballons flottants thématiques -->
+    <div class="absolute top-10 right-10 w-4 h-4 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full animate-float opacity-40 shadow-lg shadow-emerald-500/25"></div>
+    <div class="absolute bottom-20 left-1/4 w-5 h-5 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full animate-float-reverse opacity-35 shadow-lg shadow-blue-500/25" style="animation-delay: 1.2s;"></div>
+    <div class="absolute top-1/3 right-1/3 w-3 h-3 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full animate-float opacity-30 shadow-lg shadow-purple-500/25" style="animation-delay: 2.1s;"></div>
+    <div class="absolute bottom-1/3 left-20 w-4 h-4 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full animate-float-reverse opacity-35 shadow-lg shadow-amber-500/25" style="animation-delay: 3.5s;"></div>
+
+    <!-- Petites particules décoratives -->
+    <div class="absolute top-32 right-32 w-2 h-2 bg-emerald-300 rounded-full animate-float opacity-25"></div>
+    <div class="absolute bottom-40 left-1/3 w-1 h-1 bg-blue-300 rounded-full animate-float-reverse opacity-20" style="animation-delay: 1.5s;"></div>
+    <div class="absolute top-2/3 right-1/4 w-2 h-2 bg-purple-300 rounded-full animate-float opacity-22" style="animation-delay: 2.8s;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-[1000px] mx-auto px-4 sm:px-10 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-bold text-slate-500 uppercase tracking-widest mb-6">
+      <span class="material-symbols-outlined text-sm text-secondary">shield</span>
+      Transparence & Sécurité
+    </div>
+    <h1 class="text-primary text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em] mb-6">
+      Politique de <br/>
+      <span class="text-secondary">Confidentialité</span>
+    </h1>
+    <p class="text-slate-500 text-lg sm:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
+      Votre confiance est notre priorité. Découvrez comment Go Services s'engage à protéger vos données personnelles et à garantir la sécurité de vos informations au Sénégal.
+    </p>
+    <div class="mt-8 text-sm text-slate-400 font-medium">
+      Dernière mise à jour : 24 Mai 2024
+    </div>
+  </div>
+</div>
+
+<div class="relative z-20 max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 -mt-8 mb-24">
+  <div class="policy-card rounded-3xl p-8 sm:p-12 md:p-16">
+    <div class="prose prose-lg max-w-none text-slate-600">
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-primary mb-6">Introduction</h2>
+        <p class="leading-relaxed mb-4">
+          Chez Go Services, nous prenons votre vie privée très au sérieux. Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre plateforme multi-services (transport, santé, événementiel). En utilisant nos services, vous acceptez les pratiques décrites dans cette politique.
+        </p>
+        <p class="leading-relaxed">
+          Notre engagement est de vous offrir une expérience premium tout en garantissant la sécurité absolue de vos données personnelles, conformément aux lois en vigueur au Sénégal sur la protection des données.
+        </p>
+      </div>
+
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-primary mb-6">Collecte des données</h2>
+        <p class="leading-relaxed mb-4">
+          Nous collectons différents types d'informations pour fournir et améliorer nos services :
+        </p>
+        <ul class="space-y-3 mt-4">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+            <span><strong>Informations personnelles :</strong> Nom, adresse e-mail, numéro de téléphone, adresse de facturation nécessaires à la création de votre compte.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+            <span><strong>Données de transaction :</strong> Détails sur les services réservés (trajets taxi, rendez-vous médicaux, billets d'événements) et informations de paiement sécurisées.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+            <span><strong>Données de localisation :</strong> Nécessaires pour le service de taxi et la localisation des structures de santé ou événements à proximité.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+            <span><strong>Données techniques :</strong> Adresse IP, type de navigateur, et données d'utilisation pour optimiser la performance de notre plateforme.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-primary mb-6">Utilisation des informations</h2>
+        <p class="leading-relaxed mb-4">
+          Vos données sont utilisées exclusivement pour :
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+            <h3 class="text-primary font-bold mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">manage_accounts</span>
+              Gestion de compte
+            </h3>
+            <p class="text-sm">Gérer votre inscription, vérifier votre identité et traiter vos commandes de services.</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+            <h3 class="text-primary font-bold mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">support_agent</span>
+              Service Client
+            </h3>
+            <p class="text-sm">Répondre à vos demandes, résoudre les problèmes techniques et améliorer notre support.</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+            <h3 class="text-primary font-bold mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">security</span>
+              Sécurité
+            </h3>
+            <p class="text-sm">Détecter et prévenir les fraudes, abus ou incidents de sécurité sur la plateforme.</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+            <h3 class="text-primary font-bold mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">notifications</span>
+              Communication
+            </h3>
+            <p class="text-sm">Vous envoyer des notifications importantes concernant vos réservations et mises à jour de service.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-primary mb-6">Protection des données</h2>
+        <p class="leading-relaxed mb-4">
+          Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données contre l'accès non autorisé, la modification, la divulgation ou la destruction.
+        </p>
+        <p class="leading-relaxed">
+          Toutes les transactions de paiement sont cryptées via le protocole SSL. L'accès aux données personnelles est strictement limité aux employés, contractants et agents de Go Services qui ont besoin de connaître ces informations pour opérer, développer ou améliorer nos services.
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-primary mb-6">Vos droits</h2>
+        <p class="leading-relaxed mb-4">
+          Conformément à la législation sénégalaise, vous disposez des droits suivants concernant vos données personnelles :
+        </p>
+        <ul class="space-y-2 mt-4 ml-4 list-disc marker:text-secondary">
+          <li>Droit d'accès à vos données personnelles.</li>
+          <li>Droit de rectification des données inexactes.</li>
+          <li>Droit à l'effacement de vos données ("droit à l'oubli").</li>
+          <li>Droit à la limitation du traitement.</li>
+          <li>Droit à la portabilité des données.</li>
+        </ul>
+        <div class="mt-8 p-6 bg-secondary/5 border border-secondary/20 rounded-xl flex items-start gap-4">
+          <span class="material-symbols-outlined text-secondary text-3xl">contact_support</span>
+          <div>
+            <h4 class="text-primary font-bold mb-1">Exercer vos droits</h4>
+            <p class="text-sm text-slate-600">
+              Pour toute question ou pour exercer vos droits, veuillez contacter notre Délégué à la Protection des Données à l'adresse : <a class="text-secondary font-bold hover:underline" href="mailto:privacy@goservices.sn">privacy@goservices.sn</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="h-2 w-full bg-gradient-to-r from-[#00A86B] via-cyan-400 to-[#0F172A]"></div>

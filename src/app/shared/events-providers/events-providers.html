@@ -1,0 +1,149 @@
+<section class="w-full bg-white py-16 relative overflow-hidden">
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <!-- Pattern de fond subtil -->
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIiBmaWxsPSJub25lIiBzdHJva2U9IiNlMmU4ZjAiIHN0cm9rZS13aWR0aD0iMSI+PHBhdGggZD0iTTAgNjBWMjBMMjAgMEg2MEw0MCAyMEw0MCA2MEwwIDYwWiIvPjwvc3ZnPg==')] opacity-5"></div>
+
+    <!-- Gradients flous animés -->
+    <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-br from-emerald-500/5 to-transparent rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-gradient-to-tr from-purple-500/4 to-transparent rounded-full blur-3xl animate-float-reverse"></div>
+
+    <!-- Formes SVG animées -->
+    <svg class="absolute inset-0 w-full h-full opacity-15" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="providers-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#00A86B;stop-opacity:0.15"></stop>
+          <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"></stop>
+        </linearGradient>
+        <linearGradient id="providers-grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.12"></stop>
+          <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"></stop>
+        </linearGradient>
+      </defs>
+
+      <!-- Cercles décoratifs animés -->
+      <circle cx="90%" cy="10%" r="80" fill="url(#providers-grad1)" opacity="0.3" class="animate-pulse-slow"></circle>
+      <circle cx="10%" cy="80%" r="60" fill="url(#providers-grad2)" opacity="0.25" class="animate-spin-slow"></circle>
+    </svg>
+
+    <!-- Ballons flottants thématiques -->
+    <div class="absolute top-10 left-10 w-3 h-3 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full animate-float opacity-40 shadow-lg shadow-emerald-500/25"></div>
+    <div class="absolute top-20 right-20 w-4 h-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full animate-float-reverse opacity-35 shadow-lg shadow-purple-500/25" style="animation-delay: 0.8s;"></div>
+    <div class="absolute bottom-20 left-1/4 w-3 h-3 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full animate-float opacity-30 shadow-lg shadow-amber-500/25" style="animation-delay: 1.6s;"></div>
+    <div class="absolute top-1/3 right-1/3 w-2 h-2 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full animate-float-reverse opacity-35 shadow-lg shadow-rose-500/25" style="animation-delay: 2.4s;"></div>
+
+    <!-- Petites particules décoratives -->
+    <div class="absolute top-32 right-32 w-2 h-2 bg-emerald-300 rounded-full animate-float opacity-25"></div>
+    <div class="absolute bottom-40 left-1/3 w-1 h-1 bg-purple-300 rounded-full animate-float-reverse opacity-20" style="animation-delay: 1.2s;"></div>
+    <div class="absolute top-2/3 left-1/4 w-2 h-2 bg-amber-300 rounded-full animate-float opacity-22" style="animation-delay: 2.8s;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-10">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-black text-primary mb-4">Trouvez l'inspiration par type d'événement</h2>
+      <p class="text-slate-500 text-lg">Découvrez les prestataires spécialisés pour chaque occasion</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button class="px-6 py-3 rounded-full bg-emerald-50 text-secondary border border-emerald-100 hover:bg-secondary hover:text-white font-semibold transition-all shadow-sm">
+        Tous
+      </button>
+      <button class="px-6 py-3 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-secondary hover:text-secondary font-semibold transition-all hover:shadow-md">
+        Mariage
+      </button>
+      <button class="px-6 py-3 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-secondary hover:text-secondary font-semibold transition-all hover:shadow-md">
+        Corporate
+      </button>
+      <button class="px-6 py-3 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-secondary hover:text-secondary font-semibold transition-all hover:shadow-md">
+        Anniversaire
+      </button>
+      <button class="px-6 py-3 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-secondary hover:text-secondary font-semibold transition-all hover:shadow-md">
+        Soirée VIP
+      </button>
+      <button class="px-6 py-3 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-secondary hover:text-secondary font-semibold transition-all hover:shadow-md">
+        Conférence
+      </button>
+      <button class="px-6 py-3 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-secondary hover:text-secondary font-semibold transition-all hover:shadow-md">
+        Gala
+      </button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="group relative rounded-2xl bg-white border border-slate-100 p-0 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 overflow-hidden flex flex-col">
+        <div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+          <img alt="Prestige Events" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8KfMyeW2XRi1jYOYFG2IR3vyhnzUvOzB8-nHtWlbfKiSFm9hD_uGDsfV5Fu0MNToBmeOnU2fN-gkOuiZrMqY5Yp3K8wYH1Rtl5Mbf-l5aXznEZto-saAHbbsQsCD-zlxH4XEuiPrQS0aOf50eSpxwX0TLKEVS3SaEMuBoQ_Fkk63KAkgRSw9qpdvsWtlFcfccrAOntWeuOTE5rIm1EnMTiQSv1WpER9vbbn-MBOEzYBckoC5oAbhc_I8sxDHZRCMXMasvn1Ra9H-t"/>
+          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-primary">
+            Planner
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h4 class="text-xl font-bold text-primary mb-1">Prestige Events Dakar</h4>
+          <p class="text-sm text-slate-500 mb-3">Organisation de mariages & cérémonies</p>
+          <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star_half</span>
+            <span class="text-slate-400 ml-1 font-medium">(4.9) • 120 avis</span>
+          </div>
+          <div class="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
+            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">Vérifié</span>
+            <button class="px-4 py-2 bg-secondary text-white text-sm font-bold rounded-lg hover:bg-emerald-600 transition-colors">Réserver</button>
+          </div>
+        </div>
+      </div>
+      <div class="group relative rounded-2xl bg-white border border-slate-100 p-0 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 overflow-hidden flex flex-col">
+        <div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+          <img alt="Délices Royales" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWa9DB7-ARtl9lI6umB6NIBxFDTHFZDKj-YrQ11GLfHDxO_Jqc5OdSVatH4AxibUH4RgCqXRSd_WYgEaxTvLdp7kW-jWvJFnj7TmPcrF618V9neFlLMQBjlnycct-KqxreQTFIAodS85hLA-Jd1F9JCvGFY8_qFfjpi0ov2-Oy7zV20zfnvUKTgKUiYvJ6L8Jjb_FtRtDJ431ZXoPxVFknN6jxPB_t-jlWUbrJTZ5PN-Luaj9_e5_Ukl1qnR7VnG050iUi-noZ7SVp"/>
+          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-primary">
+            Traiteur
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h4 class="text-xl font-bold text-primary mb-1">Délices Royales</h4>
+          <p class="text-sm text-slate-500 mb-3">Gastronomie sénégalaise et internationale</p>
+          <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="text-slate-400 ml-1 font-medium">(5.0) • 85 avis</span>
+          </div>
+          <div class="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
+            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">Vérifié</span>
+            <button class="px-4 py-2 bg-secondary text-white text-sm font-bold rounded-lg hover:bg-emerald-600 transition-colors">Réserver</button>
+          </div>
+        </div>
+      </div>
+      <div class="group relative rounded-2xl bg-white border border-slate-100 p-0 shadow-sm hover:shadow-xl hover:border-emerald-100 transition-all duration-300 overflow-hidden flex flex-col">
+        <div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+          <img alt="Lumière & Déco" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv388xPUAzjyF-o7-1riZ1nmliT8zM6ttwSAaJWs5A0gR6e6r3GtfVujLGvtaTCxkjP6wHWNa-IZzGau4VAPxMDiS5vIsvW02jZbMbTTqKq8Om_oYK-IDisutAMiXvkfLuwMAqzxZVCGsFgvY_V9HmlNBWzmb9WhzTnPxe7JTufOPi9cnDmYKNslmNWqnqZ7b_CgCr4bGXcIkcaTEyGOJkctbLtwmQFO9KPPSzB4OoZl4DDQ_FxCPOsOYOmUhbm3hadP1trSIb67se"/>
+          <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-primary">
+            Décorateur
+          </div>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h4 class="text-xl font-bold text-primary mb-1">Lumière & Déco</h4>
+          <p class="text-sm text-slate-500 mb-3">Scénographie événementielle et florale</p>
+          <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="material-symbols-outlined text-sm font-fill">star</span>
+            <span class="text-slate-300 text-sm font-fill">star</span>
+            <span class="text-slate-400 ml-1 font-medium">(4.5) • 42 avis</span>
+          </div>
+          <div class="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
+            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">Vérifié</span>
+            <button class="px-4 py-2 bg-secondary text-white text-sm font-bold rounded-lg hover:bg-emerald-600 transition-colors">Réserver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 text-center">
+      <button class="inline-flex items-center justify-center gap-2 text-slate-600 font-semibold hover:text-secondary transition-colors">
+        Voir tous les prestataires
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </button>
+    </div>
+  </div>
+</section>
