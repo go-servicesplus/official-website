@@ -1,86 +1,135 @@
-<div class="relative w-full bg-gradient-to-br from-white via-slate-50 to-white border-b border-slate-100 overflow-hidden">
-<div class="absolute inset-0 z-0 pointer-events-none">
-<!-- Pattern de fond subtil -->
-<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" class="opacity-[0.03]">
-<defs>
-<pattern height="40" id="hero-pattern" patternUnits="userSpaceOnUse" width="40">
-<path d="M0 40L40 0H20L0 20M40 40V20L20 40" fill="none" stroke="currentColor" stroke-width="1"></path>
-</pattern>
-</defs>
-<rect fill="url(#hero-pattern)" height="100%" width="100%"></rect>
-</svg>
+<div
+  class="relative w-full bg-gradient-to-br from-white via-slate-50 to-white border-b border-slate-100 overflow-hidden">
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <!-- Pattern de fond subtil -->
+    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" class="opacity-[0.03]">
+      <defs>
+        <pattern height="40" id="hero-pattern" patternUnits="userSpaceOnUse" width="40">
+          <path d="M0 40L40 0H20L0 20M40 40V20L20 40" fill="none" stroke="currentColor" stroke-width="1"></path>
+        </pattern>
+      </defs>
+      <rect fill="url(#hero-pattern)" height="100%" width="100%"></rect>
+    </svg>
 
-<!-- Gradients flous animés -->
-<div class="absolute right-0 top-0 -mt-20 -mr-20 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-secondary/10 to-emerald-500/5 blur-3xl animate-float"></div>
-<div class="absolute bottom-0 left-0 -mb-20 -ml-20 h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-primary/5 to-blue-500/3 blur-3xl animate-float-reverse"></div>
-<div class="absolute top-1/2 left-1/3 w-[300px] h-[300px] rounded-full bg-gradient-to-r from-purple-500/5 to-pink-500/3 blur-2xl animate-blob"></div>
+    <!-- Gradients flous animés -->
+    <div
+      class="absolute right-0 top-0 -mt-20 -mr-20 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-secondary/10 to-emerald-500/5 blur-3xl animate-float"></div>
+    <div
+      class="absolute bottom-0 left-0 -mb-20 -ml-20 h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-primary/5 to-blue-500/3 blur-3xl animate-float-reverse"></div>
+    <div
+      class="absolute top-1/2 left-1/3 w-[300px] h-[300px] rounded-full bg-gradient-to-r from-purple-500/5 to-pink-500/3 blur-2xl animate-blob"></div>
 
-<!-- Formes géométriques SVG animées -->
-<svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<linearGradient id="hero-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" style="stop-color:#00A86B;stop-opacity:0.2"></stop>
-<stop offset="50%" style="stop-color:#34D399;stop-opacity:0.1"></stop>
-<stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"></stop>
-</linearGradient>
-<linearGradient id="hero-grad2" x1="100%" y1="0%" x2="0%" y2="100%">
-<stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.15"></stop>
-<stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"></stop>
-</linearGradient>
-</defs>
+    <!-- Formes géométriques SVG animées -->
+    <svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="hero-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#00A86B;stop-opacity:0.2"></stop>
+          <stop offset="50%" style="stop-color:#34D399;stop-opacity:0.1"></stop>
+          <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"></stop>
+        </linearGradient>
+        <linearGradient id="hero-grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.15"></stop>
+          <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"></stop>
+        </linearGradient>
+      </defs>
 
-<!-- Formes ondulées décoratives -->
-<path d="M0,80 C200,180 400,-20 600,80 C800,180 1000,-20 1200,80 L1200,120 L0,120 Z" fill="url(#hero-grad1)" class="animate-wave"></path>
-<path d="M0,200 C300,300 500,100 800,200 C1100,300 1300,100 1600,200 L1600,240 L0,240 Z" fill="url(#hero-grad2)" class="animate-wave" style="animation-delay: 2s;"></path>
+      <!-- Formes ondulées décoratives -->
+      <path d="M0,80 C200,180 400,-20 600,80 C800,180 1000,-20 1200,80 L1200,120 L0,120 Z" fill="url(#hero-grad1)"
+            class="animate-wave"></path>
+      <path d="M0,200 C300,300 500,100 800,200 C1100,300 1300,100 1600,200 L1600,240 L0,240 Z" fill="url(#hero-grad2)"
+            class="animate-wave" style="animation-delay: 2s;"></path>
 
-<!-- Cercles décoratifs animés -->
-<circle cx="15%" cy="25%" r="80" fill="url(#hero-grad1)" opacity="0.3" class="animate-pulse-slow"></circle>
-<circle cx="85%" cy="15%" r="120" fill="url(#hero-grad2)" opacity="0.25" class="animate-pulse-slow" style="animation-delay: 1s;"></circle>
-<circle cx="70%" cy="60%" r="60" fill="rgba(52, 211, 153, 0.15)" class="animate-spin-slow"></circle>
+      <!-- Cercles décoratifs animés -->
+      <circle cx="15%" cy="25%" r="80" fill="url(#hero-grad1)" opacity="0.3" class="animate-pulse-slow"></circle>
+      <circle cx="85%" cy="15%" r="120" fill="url(#hero-grad2)" opacity="0.25" class="animate-pulse-slow"
+              style="animation-delay: 1s;"></circle>
+      <circle cx="70%" cy="60%" r="60" fill="rgba(52, 211, 153, 0.15)" class="animate-spin-slow"></circle>
 
-<!-- Lignes décoratives animées -->
-<path d="M100,150 L200,150 L300,100 L400,150 L500,125 L600,150" stroke="rgba(52, 211, 153, 0.2)" stroke-width="2" fill="none" class="animate-dash"></path>
-<path d="M800,100 L900,50 L1000,100 L1100,75 L1200,100" stroke="rgba(59, 130, 246, 0.15)" stroke-width="2" fill="none" class="animate-dash" style="animation-delay: 3s;"></path>
-</svg>
+      <!-- Lignes décoratives animées -->
+      <path d="M100,150 L200,150 L300,100 L400,150 L500,125 L600,150" stroke="rgba(52, 211, 153, 0.2)" stroke-width="2"
+            fill="none" class="animate-dash"></path>
+      <path d="M800,100 L900,50 L1000,100 L1100,75 L1200,100" stroke="rgba(59, 130, 246, 0.15)" stroke-width="2"
+            fill="none" class="animate-dash" style="animation-delay: 3s;"></path>
+    </svg>
 
-<!-- Ballons flottants animés -->
-<div class="absolute top-10 left-10 w-4 h-4 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full animate-float opacity-70 shadow-lg shadow-emerald-500/30"></div>
-<div class="absolute top-20 right-20 w-6 h-6 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full animate-float-reverse opacity-60 shadow-lg shadow-blue-500/30" style="animation-delay: 0.5s;"></div>
-<div class="absolute bottom-20 left-1/4 w-5 h-5 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full animate-float opacity-50 shadow-lg shadow-purple-500/30" style="animation-delay: 1s;"></div>
-<div class="absolute top-1/3 right-1/3 w-3 h-3 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full animate-float-reverse opacity-60 shadow-lg shadow-pink-500/30" style="animation-delay: 1.5s;"></div>
-<div class="absolute bottom-1/3 right-10 w-4 h-4 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full animate-float opacity-50 shadow-lg shadow-amber-500/30" style="animation-delay: 2s;"></div>
-<div class="absolute top-1/2 left-20 w-3 h-3 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full animate-float-reverse opacity-40 shadow-lg shadow-rose-500/30" style="animation-delay: 2.5s;"></div>
-<div class="absolute top-1/4 right-1/4 w-5 h-5 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full animate-float opacity-50 shadow-lg shadow-indigo-500/30" style="animation-delay: 3s;"></div>
+    <!-- Ballons flottants animés -->
+    <div
+      class="absolute top-10 left-10 w-4 h-4 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full animate-float opacity-70 shadow-lg shadow-emerald-500/30"></div>
+    <div
+      class="absolute top-20 right-20 w-6 h-6 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full animate-float-reverse opacity-60 shadow-lg shadow-blue-500/30"
+      style="animation-delay: 0.5s;"></div>
+    <div
+      class="absolute bottom-20 left-1/4 w-5 h-5 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full animate-float opacity-50 shadow-lg shadow-purple-500/30"
+      style="animation-delay: 1s;"></div>
+    <div
+      class="absolute top-1/3 right-1/3 w-3 h-3 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full animate-float-reverse opacity-60 shadow-lg shadow-pink-500/30"
+      style="animation-delay: 1.5s;"></div>
+    <div
+      class="absolute bottom-1/3 right-10 w-4 h-4 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full animate-float opacity-50 shadow-lg shadow-amber-500/30"
+      style="animation-delay: 2s;"></div>
+    <div
+      class="absolute top-1/2 left-20 w-3 h-3 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full animate-float-reverse opacity-40 shadow-lg shadow-rose-500/30"
+      style="animation-delay: 2.5s;"></div>
+    <div
+      class="absolute top-1/4 right-1/4 w-5 h-5 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full animate-float opacity-50 shadow-lg shadow-indigo-500/30"
+      style="animation-delay: 3s;"></div>
 
-<!-- Petites particules -->
-<div class="absolute top-32 left-32 w-2 h-2 bg-emerald-300 rounded-full animate-float opacity-40"></div>
-<div class="absolute top-40 right-40 w-1 h-1 bg-blue-300 rounded-full animate-float-reverse opacity-30" style="animation-delay: 0.8s;"></div>
-<div class="absolute bottom-32 left-1/3 w-2 h-2 bg-purple-300 rounded-full animate-float opacity-35" style="animation-delay: 1.2s;"></div>
-<div class="absolute top-2/3 right-1/4 w-1 h-1 bg-pink-300 rounded-full animate-float-reverse opacity-40" style="animation-delay: 1.8s;"></div>
-</div>
-<div class="relative z-10 max-w-[1400px] mx-auto pt-20 pb-24 px-4 sm:px-10 flex flex-col items-center text-center">
-<div class="max-w-4xl mx-auto">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-bold text-slate-600 uppercase tracking-widest mb-8">
-<span class="w-2 h-2 rounded-full bg-secondary"></span>
-                    Nouveau au Sénégal
-                </div>
-<h1 class="text-primary text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.1] tracking-[-0.033em] mb-8">
-                    Une seule plateforme. <br/>
-<span class="text-secondary">Plusieurs services essentiels.</span>
-</h1>
-<h2 class="text-slate-600 text-lg sm:text-2xl font-medium leading-relaxed max-w-3xl mx-auto mb-10">
-                    Votre écosystème de confiance au Sénégal pour la mobilité, la santé et l'événementiel. Simplifiez votre quotidien dès aujourd'hui.
-                </h2>
-<div *ngIf="showCTA" class="flex flex-wrap justify-center gap-4">
-<button class="flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-secondary hover:bg-emerald-600 transition-colors text-white text-lg font-bold shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/40 transform hover:-translate-y-0.5 gap-3">
-<span class="material-symbols-outlined text-xl">handshake</span>
-<span>Devenez partenaire</span>
-</button>
-<button class="flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 border-2 border-slate-200 text-primary hover:border-primary hover:bg-slate-50 transition-all text-lg font-bold gap-3">
-<span class="material-symbols-outlined text-xl">download</span>
-<span>Télécharger l'app</span>
-</button>
-</div>
-</div>
-</div>
+    <!-- Petites particules -->
+    <div class="absolute top-32 left-32 w-2 h-2 bg-emerald-300 rounded-full animate-float opacity-40"></div>
+    <div class="absolute top-40 right-40 w-1 h-1 bg-blue-300 rounded-full animate-float-reverse opacity-30"
+         style="animation-delay: 0.8s;"></div>
+    <div class="absolute bottom-32 left-1/3 w-2 h-2 bg-purple-300 rounded-full animate-float opacity-35"
+         style="animation-delay: 1.2s;"></div>
+    <div class="absolute top-2/3 right-1/4 w-1 h-1 bg-pink-300 rounded-full animate-float-reverse opacity-40"
+         style="animation-delay: 1.8s;"></div>
+  </div>
+  <div class="relative z-10 max-w-[1400px] mx-auto pt-20 pb-24 px-4 sm:px-10 flex flex-col items-center text-center">
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-bold text-slate-600 uppercase tracking-widest mb-8">
+        <span class="w-2 h-2 rounded-full bg-secondary"></span>
+        Nouveau au Sénégal
+      </div>
+      <h1 class="text-primary text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.1] tracking-[-0.033em] mb-8">
+        Une seule plateforme. <br/>
+        <span class="text-secondary">Plusieurs services essentiels.</span>
+      </h1>
+      <h2 class="text-slate-600 text-lg sm:text-2xl font-medium leading-relaxed max-w-3xl mx-auto mb-10">
+        Votre écosystème de confiance au Sénégal pour la mobilité, la santé et l'événementiel. Simplifiez votre
+        quotidien dès aujourd'hui.
+      </h2>
+      <div *ngIf="showCTA" class="flex flex-wrap justify-center gap-4">
+        <a routerLink="/partners"
+           class="flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-secondary hover:bg-emerald-600 transition-colors text-white text-lg font-bold shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/40 transform hover:-translate-y-0.5 gap-3">
+          <span class="material-symbols-outlined text-xl">handshake</span>
+          <span>Devenez partenaire</span>
+        </a>
+<!--        <a href="/#services"-->
+<!--           class="flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 border-2 border-slate-200 text-primary hover:border-primary hover:bg-slate-50 transition-all text-lg font-bold gap-3">-->
+<!--          <span class="material-symbols-outlined text-xl">download</span>-->
+<!--          <span>Découvrer nos solutions</span>-->
+<!--        </a>-->
+
+        <div class=" space-y-2">
+<!--           Bouton iOS-->
+          <button *ngIf="showIOSButton"
+                  (click)="downloadApp('ios', 'events')"
+                  class="w-full py-3 px-4 rounded-lg bg-white text-base font-bold text-black  flex items-center justify-center gap-2 hover:bg-gray-100 transition-colors border border-gray-300">
+            <img src="/app-store.svg" alt="App Store" class="w-8 h-8">
+            Télécharger sur l'App Store
+          </button>
+
+          <!-- Bouton Android -->
+          <button *ngIf="showAndroidButton"
+                  (click)="downloadApp('android', 'events')"
+                  class="w-full py-4 px-4 rounded-lg bg-white text-base font-bold text-black  flex items-center justify-center gap-2 hover:bg-gray-100 transition-colors border border-gray-300">
+            <img src="/playstore.svg" alt="Google Play" class="w-7 h-7">
+            Télécharger sur Google Play
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
 </div>
