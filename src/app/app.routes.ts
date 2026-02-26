@@ -6,10 +6,12 @@ import { EventsComponent } from './pages/events/events';
 import { Booking } from './pages/booking/booking';
 import { Health } from './pages/health/health';
 import { PrivacyPolicyPageComponent } from './pages/privacy-policy/privacy-policy';
+import { AboutComponent } from './pages/about/about';
 
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'home', component: Home },
+  { path: 'about', component: AboutComponent },
   { path: 'partners', component: Partners },
   { path: 'contact', component: Contact },
   { path: 'booking', component: Booking },

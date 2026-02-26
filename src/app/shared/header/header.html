@@ -11,6 +11,7 @@
   <nav class="hidden md:block absolute left-1/2 transform -translate-x-1/2">
     <div class="flex items-center gap-9">
       <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/">Accueil</a>
+      <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/about">À Propos</a>
       <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/booking">Go-Services Taxi</a>
       <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/health">Go-Services Santé</a>
       <a class="text-slate-600 hover:text-secondary text-sm font-semibold transition-colors" routerLink="/events">Go-Services Événementielle</a>
@@ -50,6 +51,7 @@
   <nav class="flex-1 overflow-y-auto py-4">
     <ul class="flex flex-col">
       <li><a routerLink="/" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Accueil</a></li>
+      <li><a routerLink="/about" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">À Propos</a></li>
       <li><a routerLink="/booking" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Go-Services Taxi</a></li>
       <li><a routerLink="/health" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Go-Services Santé</a></li>
       <li><a routerLink="/events" (click)="closeMobile()" class="block px-6 py-3 text-slate-700 hover:bg-slate-50 font-semibold">Go-Services Événementielle</a></li>
