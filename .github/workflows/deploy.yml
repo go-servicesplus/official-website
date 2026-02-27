@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build marketplace
-        run: ng build --configuration=production
+        run: npx ng build --configuration=production
 
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.9.0
