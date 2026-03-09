@@ -1,37 +1,37 @@
-name: Deploy Official Website
+name: Deploy Goservicesplus
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'Dockerfile'
+      - '.github/workflows/deploy.yml'
 
 jobs:
-  deploy-marketplace:
+  deploy-goservicesplus:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
-      - name: Build marketplace
+      - name: Build (CI check)
         run: npx ng build --configuration=production
 
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
-
-      - name: Deploy marketplace to VPS
+      - name: Trigger Coolify deployment
         run: |
-          rsync -avz --delete \
-            -e "ssh -p 2222 -o StrictHostKeyChecking=no" \
-            dist/goservicesplus/browser/ \
-            octus@vps117773.serveur-vps.net:/var/www/goserviceplus/front/official-website/
+          curl --silent --fail --request GET \
+            "${{ secrets.COOLIFY_WEBHOOK }}"
